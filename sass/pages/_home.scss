@@ -16,10 +16,10 @@
     }
 }
 
-#discover {
+.discover {
     background-color: #f6f6f6;
     text-align: center;
-    .discover-text {
+    &-text {
         padding-top: 10%;
         padding-bottom: 15%;
         h2, p {
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 5% 10% 5%;
-    .fonctionnement__icon {
+    &__icon {
         margin-bottom: 0;
         color: #7e7e7e;
         height: 25px;

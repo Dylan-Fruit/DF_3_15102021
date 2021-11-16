@@ -188,18 +188,18 @@ template {
   outline: none;
 }
 
-#discover {
+.discover {
   background-color: #f6f6f6;
   text-align: center;
 }
-#discover .discover-text {
+.discover-text {
   padding-top: 10%;
   padding-bottom: 15%;
 }
-#discover .discover-text h2, #discover .discover-text p {
+.discover-text h2, .discover-text p {
   margin: 0 12% 4% 12%;
 }
-#discover .discover-text .btn {
+.discover-text .btn {
   color: #FFF;
   font-weight: 400;
   cursor: pointer;
@@ -216,7 +216,7 @@ template {
   flex-direction: column;
   margin: 0 5% 10% 5%;
 }
-.fonctionnement .fonctionnement__icon {
+.fonctionnement__icon {
   margin-bottom: 0;
   color: #7e7e7e;
   height: 25px;
