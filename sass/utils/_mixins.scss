@@ -1,0 +1,167 @@
+@mixin menus_cards {
+    background-color: #f6f6f6;
+    padding: 16px;
+    h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        &::after {
+            content: "";
+            width: 50%;
+            border-bottom: 3px solid $tertiary-color;
+            bottom: -5px;
+            position: absolute;
+            left: 0;
+        }
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+    }
+    &__cards {
+        cursor: pointer;
+        position: relative;
+        box-shadow: 3px 4px 5px rgb(0 0 0 / 10%);
+        display: flex;
+        margin: 15px 0 0 0;
+        background-color: #FFF;
+        border-radius: 15px;
+        overflow: hidden;
+        h3 {
+            margin: 0 0 5px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &:hover {
+            .checked {
+                width: 100px;
+            }
+            .fa-check-circle {
+                transform: rotate(360deg);
+            }
+        }
+        .checked {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $tertiary-color;
+            width: 0px;
+            transition: width 1s;
+            text-align: center;
+        }
+        .fa-check-circle {
+            transition: ease .5s;
+            color: #FFF;
+            font-size: 20px;
+        }
+        .text__bottomline {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &__bottomline {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price {
+        font-weight: bold;
+        padding: 10px 20px 10px 10px;   
+        display: flex;
+        align-items: flex-end;
+    }
+    &__princ, &__sec {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+    }
+}
+
+@mixin btn($size: 5% 7%) {
+    .btn {
+        color: #FFF;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+        padding: $size; 
+        border-radius: 50px;
+        margin-top: 4%;
+        background: linear-gradient($secondary-color, $primary-color);
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+    }
+}
+
+@mixin cardsappear {
+    .cardsappear1 {
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-name: cardsappear;
+        animation-fill-mode: both;
+    }
+    .cardsappear2 {
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-name: cardsappear;
+        animation-fill-mode: both;
+    }
+    .cardsappear3 {
+        animation-duration: 0.5s;
+        animation-delay: 0.2s;
+        animation-name: cardsappear;
+        animation-fill-mode: both;
+    }
+    .cardsappear4 {
+        animation-duration: 0.5s;
+        animation-delay: 0.3s;
+        animation-name: cardsappear;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes cardsappear {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100% { 
+            opacity: 1; 
+        }
+    }
+}
+
+@mixin like($top: 0, $left: 0) {
+    .like {
+        i {
+            transition: all 0.3s;
+        }
+        .fa-heart {
+            cursor: pointer;
+            position: absolute;
+            // top:80% left:83% home; top:43% left:85% menus
+            top: $top;
+            left: $left;
+            font-size: 25px;
+        }
+        .fas{
+            transform:scale(0);
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient($secondary-color, $primary-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        &:hover .far {
+            transform: scale(0.8);
+        }
+        &:hover .fas {
+            transform: scale(1);
+        }
+    }
+}

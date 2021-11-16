@@ -1,0 +1,42 @@
+.footer{
+    background-color: #353535;
+    height: 145px;
+    padding: 5%;
+   &__list, &__logo {
+        color: #FFF;
+        padding: 0;
+    }
+    &__list {
+        list-style: none;
+        margin-bottom: 0;
+    }
+    &__bold, &__regular {
+        margin-bottom: 10px;
+        a {
+            color: #FFF;
+        }
+    }
+    &__bold {
+        font-weight: bold;
+        .fa-utensils {
+            margin-right: 7px;
+        }
+    }
+}
+
+@media screen and (min-width: 429px) {
+    .footer {
+        padding-top: 3%;
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 7%;  
+        }
+        &__logo {
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+    }
+}

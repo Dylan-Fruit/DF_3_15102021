@@ -1,0 +1,54 @@
+.restaurant__img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+.restaurant__name {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -25px;
+    justify-content: space-between;
+    border-radius: 25px 25px 0 0;
+    padding: 30px 16px 16px 16px;
+    background-color: #f6f6f6;
+    h1 {
+        font-size: 27px;
+        font-weight: lighter;
+    }
+    @include like(43%, 85%);
+}
+
+.entrees, .plats, .desserts {
+    @include menus_cards;
+    @include cardsappear;
+}
+
+.boutton {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 30px 30px 65px 30px;
+    @include btn($size: 5% 17%);
+}
+
+
+@media screen and (min-width: 429px) {
+    .restaurant__name {
+        @include like(43%, 95%);
+    }
+    .entrees, .plats, .desserts {
+        &__menu {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__cards {
+            width: 32%;
+        }
+    }
+    .boutton {
+        @include btn($size: 1% 2%);
+    }
+}
