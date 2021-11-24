@@ -210,6 +210,11 @@ template {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.discover-text .btn:hover {
+  background: linear-gradient(#fd88dd, #9b6dd5);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  transition: ease-in-out 0.3s;
+}
 
 .fonctionnement {
   display: flex;
@@ -349,6 +354,11 @@ template {
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   }
+  .discover-text .btn:hover {
+    background: linear-gradient(#fd88dd, #9b6dd5);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.3s;
+  }
 
   .fonctionnement {
     margin-bottom: 5%;
@@ -408,6 +418,11 @@ template {
     margin-top: 4%;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  .discover-text .btn:hover {
+    background: linear-gradient(#fd88dd, #9b6dd5);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.3s;
   }
 
   .fonctionnement {
@@ -470,6 +485,11 @@ template {
     margin-top: 4%;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  .discover-text .btn:hover {
+    background: linear-gradient(#fd88dd, #9b6dd5);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.3s;
   }
 
   .fonctionnement {
@@ -711,6 +731,11 @@ template {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.boutton .btn:hover {
+  background: linear-gradient(#fd88dd, #9b6dd5);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  transition: ease-in-out 0.3s;
+}
 
 @media screen and (min-width: 429px) {
   .restaurant__name .like i {
@@ -756,6 +781,11 @@ template {
     margin-top: 4%;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  .boutton .btn:hover {
+    background: linear-gradient(#fd88dd, #9b6dd5);
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.3s;
   }
 }
 .header-logo {
