@@ -95,7 +95,7 @@
         flex-direction: column;
     }
     &__new {
-        left: 72%;
+        right: 5%;
         color: #008766;
         padding: 5px 8px;
         font-weight: bold;
@@ -170,10 +170,6 @@
             width: 35%;
             margin: 0px 2% 5% 2%;
         }
-        &__new {
-            left: 73%;
-            top: 7%;
-        }
     }   
 }
 // Tablettes 
@@ -223,10 +219,6 @@
         &__card {
             width: 40%;
             margin: 0px 2% 5% 2%;
-        }
-        &__new {
-            left: 73%;
-            top: 7%;
         }
     }   
 }
@@ -279,10 +271,6 @@
         &__card {
             width: 20%;
             margin: 0px 2% 5% 2%;
-        }
-        &__new {
-            left: 75%;
-            top: 7%;
         }
         @include like(80%, 87%)
     }
