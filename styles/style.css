@@ -396,7 +396,7 @@ template {
     top: 7%;
   }
 }
-@media screen and (min-width: 429px) and (max-width: 834px) {
+@media screen and (min-width: 767px) and (max-width: 834px) {
   .localisation input {
     width: 16%;
   }
